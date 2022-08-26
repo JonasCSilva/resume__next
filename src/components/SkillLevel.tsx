@@ -1,4 +1,4 @@
-import styles from "../styles/SkillLevel.module.css";
+import styles from "../styles/SkillLevel.module.scss";
 
 export default function SkillLevel({ level }: { level: 1 | 2 | 3 | 4 | 5 }) {
   return (
