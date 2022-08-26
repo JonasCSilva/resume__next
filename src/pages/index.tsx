@@ -1,6 +1,7 @@
 import type { NextPage } from 'next'
 import Head from 'next/head'
 
+import { ContactsGrid } from '../components/ContactsGrid'
 import { LinksGrid } from '../components/LinksGrid'
 import { SkillsGrid } from '../components/SkillsGrid'
 import styles from '../styles/Home.module.scss'
@@ -17,23 +18,7 @@ const Home: NextPage = () => {
       <main className={styles.main}>
         <h1 className={styles.title}>Jonas Costa Silva</h1>
 
-        <div className={styles.contactGrid}>
-          <div className={styles.gridItem}>
-            <h3>E-mail</h3>
-            <div className={styles.gridItemDivider} />
-            <h4>email@jonascsilva.com</h4>
-          </div>
-          <div className={styles.gridItem}>
-            <h3>Telefone</h3>
-            <div className={styles.gridItemDivider} />
-            <h4>(47) 99952-3329</h4>
-          </div>
-          <div className={styles.gridItem}>
-            <h3>Endereço</h3>
-            <div className={styles.gridItemDivider} />
-            <h4>Joinville, Santa Catarina, Brasil</h4>
-          </div>
-        </div>
+        <ContactsGrid />
 
         <div className={styles.sectionsGrid}>
           <h2>FORMAÇÃO</h2>

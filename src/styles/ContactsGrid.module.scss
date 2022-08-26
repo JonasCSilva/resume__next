@@ -1,0 +1,15 @@
+.contactsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 1rem;
+}
+
+.gridItem {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+
+  h4 {
+    font-weight: normal;
+  }
+}
