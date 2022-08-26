@@ -1,3 +1,5 @@
+$circle-size: 0.7rem;
+
 .grid {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -8,8 +10,8 @@
   display: block;
   background: #e7e7e7;
   border-radius: 50%;
-  height: 0.8rem;
-  width: 0.8rem;
+  height: $circle-size;
+  width: $circle-size;
   margin: 0;
 }
 
@@ -17,7 +19,7 @@
   display: block;
   background: black;
   border-radius: 50%;
-  height: 0.8rem;
-  width: 0.8rem;
+  height: $circle-size;
+  width: $circle-size;
   margin: 0;
 }

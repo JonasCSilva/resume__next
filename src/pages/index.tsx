@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
-import SkillLevel from "../components/SkillLevel";
+import { SkillsGrid } from "../components/SkillsGrid";
 import styles from "../styles/Home.module.scss";
 
 const Home: NextPage = () => {
@@ -20,17 +20,17 @@ const Home: NextPage = () => {
         <div className={styles.contactGrid}>
           <div className={styles.gridItem}>
             <h3>E-mail</h3>
-            <div style={{ width: "10px", display: "inline-block" }} />
+            <div className={styles.gridItemDivider} />
             <h4>email@jonascsilva.com</h4>
           </div>
           <div className={styles.gridItem}>
             <h3>Telefone</h3>
-            <div style={{ width: "10px", display: "inline-block" }} />
+            <div className={styles.gridItemDivider} />
             <h4>(47) 99952-3329</h4>
           </div>
           <div className={styles.gridItem}>
             <h3>Endereço</h3>
-            <div style={{ width: "10px", display: "inline-block" }} />
+            <div className={styles.gridItemDivider} />
             <h4>Joinville, Santa Catarina, Brasil</h4>
           </div>
         </div>
@@ -43,25 +43,26 @@ const Home: NextPage = () => {
           <h2>LINKS</h2>
           <div />
           <h2>COMPETÊNCIAS</h2>
-          <div />
+          <SkillsGrid
+            skills={[
+              { name: "HTML", skillLevel: 3 },
+              { name: "Next.js", skillLevel: 3 },
+              { name: "JavaScript", skillLevel: 3 },
+              { name: "Flutter", skillLevel: 2 },
+              { name: "CSS", skillLevel: 3 },
+              { name: "Unity", skillLevel: 4 },
+              { name: "MySQL", skillLevel: 2 },
+              { name: "Unreal Engine", skillLevel: 2 },
+              { name: "Node.js", skillLevel: 3 },
+              { name: "Tauri", skillLevel: 3 },
+              { name: "React Native", skillLevel: 3 },
+              { name: "TypeScript", skillLevel: 4 },
+              { name: "React", skillLevel: 3 },
+              { name: "Angular", skillLevel: 1 },
+            ]}
+          />
           <h2>IDIOMAS</h2>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "1fr 1fr",
-            }}
-          >
-            <div
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "space-between",
-              }}
-            >
-              <h5>Inglês</h5>
-              <SkillLevel level={3} />
-            </div>
-          </div>
+          <SkillsGrid skills={[{ name: "Inglês", skillLevel: 3 }]} />
         </div>
       </main>
     </div>
