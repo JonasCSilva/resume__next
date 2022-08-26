@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import { ContactsGrid } from '../components/ContactsGrid'
+import { FormationGrid } from '../components/FormationGrid'
 import { LinksGrid } from '../components/LinksGrid'
 import { SkillsGrid } from '../components/SkillsGrid'
 import styles from '../styles/Home.module.scss'
@@ -22,13 +23,13 @@ const Home: NextPage = () => {
 
         <div className={styles.sectionsGrid}>
           <h2>FORMAÇÃO</h2>
-          <div />
+          <FormationGrid />
           <h2>LINKS</h2>
           <LinksGrid
             links={[
               { name: 'GithHub', url: 'github.com/jonascsilva' },
-              { name: 'LinkedIn', url: 'linkedin.com/in/jonascsilva' },
-              { name: 'Site Pessoal', url: 'jonascsilva.com' }
+              { name: 'LinkedIn', url: 'linkedin.com/in/jonascsilva' }
+              /* { name: 'Site Pessoal', url: 'jonascsilva.com' } */
             ]}
           />
           <h2>COMPETÊNCIAS</h2>
@@ -41,6 +42,7 @@ const Home: NextPage = () => {
               { name: 'CSS', skillLevel: 3 },
               { name: 'Unity', skillLevel: 4 },
               { name: 'MySQL', skillLevel: 2 },
+              { name: 'Electron', skillLevel: 2 },
               { name: 'Unreal Engine', skillLevel: 2 },
               { name: 'Node.js', skillLevel: 3 },
               { name: 'Tauri', skillLevel: 3 },
