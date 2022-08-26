@@ -1,10 +1,10 @@
-import { SkillLevel } from "./SkillLevel";
-import styles from "../styles/SkillsGrid.module.scss";
-import { Skill } from "../types";
+import styles from '../styles/SkillsGrid.module.scss'
+import { Skill } from '../types'
+import { SkillLevel } from './SkillLevel'
 
 type Props = {
-  skills: Skill[];
-};
+  skills: Skill[]
+}
 
 export const SkillsGrid = ({ skills }: Props): JSX.Element => (
   <div className={styles.grid}>
@@ -15,4 +15,4 @@ export const SkillsGrid = ({ skills }: Props): JSX.Element => (
       </div>
     ))}
   </div>
-);
+)

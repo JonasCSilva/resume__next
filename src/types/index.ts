@@ -1,6 +1,6 @@
 export type Skill = {
-  name: string;
-  skillLevel: LevelRange;
-};
+  name: string
+  skillLevel: LevelRange
+}
 
-export type LevelRange = 1 | 2 | 3 | 4 | 5;
+export type LevelRange = 1 | 2 | 3 | 4 | 5
