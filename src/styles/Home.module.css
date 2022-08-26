@@ -41,21 +41,3 @@
 .sectionsGrid h2 {
   text-decoration: underline;
 }
-
-.circleEmpty {
-  display: block;
-  background: #e7e7e7;
-  border-radius: 50%;
-  height: 0.8rem;
-  width: 0.8rem;
-  margin: 0;
-}
-
-.circleFilled {
-  display: block;
-  background: black;
-  border-radius: 50%;
-  height: 0.8rem;
-  width: 0.8rem;
-  margin: 0;
-}

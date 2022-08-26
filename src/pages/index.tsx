@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import Head from "next/head";
+import SkillLevel from "../components/SkillLevel";
 import styles from "../styles/Home.module.css";
 
 const Home: NextPage = () => {
@@ -58,21 +59,7 @@ const Home: NextPage = () => {
               }}
             >
               <h5>Inglês</h5>
-              <div
-                style={{
-                  display: "grid",
-                  gridTemplateColumns: "repeat(5, 1fr)",
-                  justifyItems: "center",
-                  alignItems: "center",
-                  width: "7rem",
-                }}
-              >
-                <figure className={styles.circleFilled} />
-                <figure className={styles.circleFilled} />
-                <figure className={styles.circleFilled} />
-                <figure className={styles.circleEmpty} />
-                <figure className={styles.circleEmpty} />
-              </div>
+              <SkillLevel level={3} />
             </div>
           </div>
         </div>
