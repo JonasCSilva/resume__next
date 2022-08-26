@@ -1,0 +1,15 @@
+.linksGrid {
+  display: grid;
+  row-gap: 3rem;
+}
+
+.linkContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 4rem;
+
+  a {
+    color: gray;
+  }
+}

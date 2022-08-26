@@ -12,6 +12,8 @@
   overflow: hidden;
   box-shadow: 0 20px 60px 0 rgba(186, 200, 227, 0.1), 0 16px 36px 0 rgba(186, 200, 227, 0.3);
   padding: 4rem;
+  display: grid;
+  row-gap: 3rem;
 }
 
 .title {
@@ -26,8 +28,14 @@
   row-gap: 1rem;
 }
 
-.gridItem * {
-  display: inline;
+.gridItem {
+  * {
+    display: inline;
+  }
+
+  h4 {
+    font-weight: normal;
+  }
 }
 
 .gridItemDivider {
@@ -40,8 +48,8 @@
   grid-template-columns: 1fr 4fr;
   column-gap: 3rem;
   row-gap: 3rem;
-}
 
-.sectionsGrid h2 {
-  text-decoration: underline;
+  h2 {
+    text-decoration: underline;
+  }
 }
