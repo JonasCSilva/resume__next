@@ -1,0 +1,12 @@
+# https://www.gitpod.io/docs/config-gitpod-file
+
+tasks:
+  - init: npm i
+
+vscode:
+  extensions:
+    - vscode-icons-team.vscode-icons
+    - dbaeumer.vscode-eslint
+    - dracula-theme.theme-dracula
+    - esbenp.prettier-vscode
+    - mhutchie.git-graph
