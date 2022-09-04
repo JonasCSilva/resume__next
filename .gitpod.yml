@@ -5,8 +5,6 @@ tasks:
 
 vscode:
   extensions:
-    - vscode-icons-team.vscode-icons
     - dbaeumer.vscode-eslint
-    - dracula-theme.theme-dracula
     - esbenp.prettier-vscode
-    - mhutchie.git-graph
+    - matklad.rust-analyzer
